@@ -13,9 +13,9 @@ opacity($n, $args...)
     $val = round($n * 100)
     if $val == 100
       +ie(8, true)
-        -ms-filter: none
+        -ms-filter: '-'
       +ie(7)
-        filter: none
+        filter: '-'
     else
       +ie(8, true)
         -ms-filter: '"alpha(opacity=%s)"' % $val $args
